@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/app.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="questions?story_id=history">A History Tale</a>
+        <a href="questions?story_id=omg">An Exciting Adventure</a>
+    </nav>
+    
+    <main id="content">
+        {% block content %} {% endblock %}
+
+    </main>
+
+</body>
+</html>
